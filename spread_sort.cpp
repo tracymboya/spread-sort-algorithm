@@ -1,4 +1,4 @@
-/*Bucket_sort_algorithm*/
+/*Spread_sort_algorithm*/
 
 #include<iostream>
 using namespace std;
