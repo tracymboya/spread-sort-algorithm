@@ -42,15 +42,14 @@ int main()
         count[i] = 0;
 
     int width=(max - min + 1)/bucketCount + 1;
-
+  //Placing elements in a bucket
     for(int i=0;i<n;i++)
     {
         int index= (arr[i] - min)/width;
-
         bucket[index][count[index]] = arr[i];
         count[index]++;
     }
-
+  //Each bucket is sorted using Insertion sort
     for(int i=0;i<bucketCount;i++)
     {
         for(int j=1;j<count[i];j++)
